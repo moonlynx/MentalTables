@@ -1,0 +1,87 @@
+html,
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav,
+#tables
+{
+    width: 450px;
+    margin: auto;
+    padding: 3px;
+}
+
+nav
+{
+    border: 2px solid gray;
+    border-radius: 3px;
+}
+
+nav > div
+{
+    display: table;
+    border-collapse: separate;
+    border-spacing: 3px;
+    width: 100%;
+}
+
+select
+{
+    width: 100%
+}
+
+button
+{
+    margin: 3px;
+    width: 444px;
+}
+
+.menu_row
+{
+    display: table-row;
+}
+
+.menu_row > div
+{
+    display: table-cell;
+}
+
+.menu_row > div:first-child
+{
+    width: 70%;
+}
+
+table
+{
+    width: 100%;
+    border: 2px solid gray;
+    border-collapse: separate;
+    border-spacing: 0px;
+    border-radius: 3px;
+    font-size: 1.2em;
+    padding: 2px;
+    margin: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+th
+{
+    border: 1px solid gray;
+    background-color: lightgray;
+}
+
+td
+{
+    padding: 5px;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    text-align: right;
+}
+
+td:nth-child(n+1)
+{
+    width: 10%;
+}
