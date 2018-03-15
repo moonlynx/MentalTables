@@ -74,7 +74,8 @@ class Table extends React.Component {
 }
 
 Table.propTypes = {
-    matrix: PropTypes.array.isRequired
+    // matrix must be multidimensional array of numbers
+    matrix: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.number)).isRequired
 }
 
 export default Table;

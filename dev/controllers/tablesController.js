@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Table from '../views/table';
 import getMatrix from '../models/matrix';
 
@@ -31,6 +32,13 @@ class Tables extends React.Component {
     render() {
         return this.getTablesList();
     }
+}
+
+Tables.propTypes = {
+    cells: PropTypes.number.isRequired,
+    rows: PropTypes.number.isRequired,
+    maxNumber: PropTypes.number.isRequired,
+    tables: PropTypes.number.isRequired
 }
 
 export default Tables;
